@@ -1,0 +1,57 @@
+.mainBgBark {
+    background-color: #12002b;
+    flex: 1;
+    min-height: calc(100vh - 65px - 75px );
+    margin: 0;
+}
+
+.signInContent {
+    box-sizing: border-box;
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+    transform: translateY(3rem);
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.inputWrapper label {
+    font-weight: bold;
+}
+
+.inputWrapper input {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.inputRemember {
+    display: flex;
+}
+
+.inputRemember label {
+    margin-left: 0.25rem;
+}
+
+.signInButton {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-color: #00bc77;
+    background-color: #00bc77;
+    color: #fff;
+}
+
+.error{
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}

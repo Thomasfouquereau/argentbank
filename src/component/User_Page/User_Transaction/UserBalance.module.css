@@ -1,0 +1,76 @@
+/* background */
+.bgColors {
+    background-color: #cdd2dbef;
+    min-height: calc(100vh - 65px - 75px - 20px);
+    width: 100%;
+}
+
+/* header */
+
+.userBalance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transform: translateY(-20px);
+}
+
+.userBalance::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #a4a8b0ef;
+    margin-top: 30px;
+}
+
+.userBalance::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #a4a8b0ef;
+    margin-bottom: 15px;
+}
+
+.balanceName {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.balanceAmount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.availableBalance {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* main */
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.transactionContainer {
+    width: 87%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 200px;
+}
+
+.tableee {
+    color: #cdd2dbef;
+}
+
+.lineItem {
+    background-color: #fff;
+    height: 52px;
+}
