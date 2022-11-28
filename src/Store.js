@@ -1,15 +1,15 @@
 import { createSlice, configureStore } from '@reduxjs/toolkit';
 
-const initialState = createSlice({
-    name: 'auth',
-    initialState: {token: null},
-    reducers: {
-        addToken: (state, action) => {
-            const { payload } = action;
-            state.token = payload;
-        }
-    }
-});
+// const initialState = createSlice({
+//     name: 'auth',
+//     initialState: {token: null},
+//     reducers: {
+//         addToken: (state, action) => {
+//             const { payload } = action;
+//             state.token = payload;
+//         }
+//     }
+// });
 
 const initialFirstName = createSlice({
     name: 'user',
@@ -31,11 +31,11 @@ const initialFirstName = createSlice({
     }
 });
 
-export const { addToken } = initialState.actions;
+// export const { addToken } = initialState.actions;
 export const { addFirstName,addLastName } = initialFirstName.actions;
 export const store = configureStore({
     reducer: {
-        auth: initialState.reducer,
+        // auth: initialState.reducer,
         user: initialFirstName.reducer,
     }
 });

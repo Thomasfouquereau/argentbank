@@ -54,19 +54,22 @@ export default function UserPage() {
             })
         setIsDisplay(false)
     }
+    const cancelButton = () => {
+        setIsDisplay(false)
+    }
     return (
         <div className={Style.header}>
             <h1>Welcome back<br />{getFullName}!</h1>
-            <button className={Style.editButton} onClick={() => setIsDisplay(!isDisplay)}>Edit Name</button>
+            <button className={Style.editButton} onClick={() => setIsDisplay(!isDisplay)} style={{ display: isDisplay ? "none" : "flex" }}>Edit Name</button>
             <h2 className={Style.srOnly}>Accounts</h2>
             <div className={Style.editName} style={{ display: isDisplay ? "block" : "none" }}>
                 <div className={Style.editInput}>
-                    <input type="text" onChange={handleFirstNameChange} placeholder={firstName} />
-                    <input type="text" onChange={handleLastNameChange} placeholder={lastName} />
+                    <input type="text" onChange={handleFirstNameChange} placeholder={firstName} className={Style.input} />
+                    <input type="text" onChange={handleLastNameChange} placeholder={lastName} className={Style.input} />
                 </div>
                 <div className={Style.buttonEditName}>
-                    <button onClick={saveButton} >Save</button>
-                    <button >Cancel</button>
+                    <button className={Style.buttonSave} onClick={saveButton} >Save</button>
+                    <button onClick={cancelButton} className={Style.buttonCancel} >Cancel</button>
                 </div>
             </div>
         </div>

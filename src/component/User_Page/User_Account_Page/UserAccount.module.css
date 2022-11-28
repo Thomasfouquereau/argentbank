@@ -69,10 +69,29 @@
     color: #fff;
     font-weight: bold;
     padding: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .editName{
     display: none;
+}
+
+.buttonSave, .buttonCancel{
+    width: 80px;
+    height: 30px;
+    border-color: #00bc77;
+    background-color: #00bc77;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+.input{
+    width: 10%;
+    height: 20px;
+    padding: 5px;
+    margin: 10px 10px;
 }
 
 .header {
